@@ -18,6 +18,8 @@ Unique Prompts:
 
 “Please use Plotly to generate one interactive chart and other visualizations such as a Scorecard: revenue (or profit), last 30 days, Pie/Donut: sales % by region or channel, and Bar: top 5 products/categories.”
 
+“Please generate the codes to export the dataframes that you used to build the Plotly visualizations into CSV files for Looker Studio Dashboard creation.”
+
 “Please generate 1-2 specific recommendations using the strategist pattern based on the analysis conducted so far in the discover, investigate, and validate phases. Think from an advanced Business Analyst’s perspective and make the recommendations detailed.”
 
 
