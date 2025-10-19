@@ -22,11 +22,23 @@ Unique Prompts:
 
 “Please generate 1-2 specific recommendations using the strategist pattern based on the analysis conducted so far in the discover, investigate, and validate phases. Think from an advanced Business Analyst’s perspective and make the recommendations detailed.”
 
+NYC Citibike Prompts:
 
+"Act as a senior BigQuery analyst. Produce a single runnable BigQuery SQL (no commentary) for: Task: Analyze how trip duration varies by user type (Subscriber vs Customer). Table: bigquery-public-data.new_york_citibike.citibike_trips Output: Average, median, and count of trips by usertype Filter: Exclude null or zero trip durations Sort: Average trip duration in descending order Add: LIMIT 100 to control cost during exploration."
+
+"Act as a senior BigQuery analyst. Produce a single runnable BigQuery SQL (no commentary) for: Task: Identify the most popular start and end stations, and examine how popularity changes by time of day and day of the week. Table: bigquery-public-data.new_york_citibike.citibike_trips Output: Start station, end station, hour of day, day of week, and trip count Filter: Exclude null station names Sort: By trip count in descending order Add: LIMIT 100 to control cost during exploration."
+
+"Act as a senior BigQuery analyst. Produce a single runnable BigQuery SQL (no commentary) for: Task: Determine whether there is a significant difference in the average trip duration between weekdays and weekends. Table: bigquery-public-data.new_york_citibike.citibike_trips Logic: Extract the day of the week from starttime. Categorize each trip as ‘Weekday’ (Monday–Friday) or ‘Weekend’ (Saturday–Sunday). Output: Category (Weekday/Weekend), average trip duration, total trips. Filter: Exclude null or zero tripduration values. Sort: Average trip duration in descending order. Add: LIMIT 100 to control cost during exploration."
 
 2 “fail then fix” examples: 
 
 “The 90-day-average revenue trend, using the SQL string method, has been giving me an error. Show me the output using pandas calculation. The final output should be a dataframe.” 
 
 “For the repeat purchase rate, please also include the total number of users and the number of repeat users, along with the repeat purchase rate calculated. Show all these values in a dataframe.” 
+
+NYC Citibikes "fail then fix" examples:
+
+"Refine the query to exclude null start_station_name and end_station_name values and remove any aggregated “total trips” rows so only valid station pairs with real trip counts appear."
+
+"Update the query to use window functions like ROW_NUMBER() or RANK() to keep only the top record per station-hour-day group and remove duplicate or repeated station entries."
 
