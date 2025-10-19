@@ -36,6 +36,10 @@ NYC Citibike Prompts:
 
 “For the repeat purchase rate, please also include the total number of users and the number of repeat users, along with the repeat purchase rate calculated. Show all these values in a dataframe.” 
 
+"instead giving the total revenue of repeat purchase value, calculate the repeat purchase rate, which measures the percentage of your customers who have made more than one purchase within a year. "
+
+"cross check the repeat purchase rate by cohort month and also display the cohort repeat purchase rate percentage, and see if there is any growth or trend with a graph."
+
 NYC Citibikes "fail then fix" examples:
 
 "Refine the query to exclude null start_station_name and end_station_name values and remove any aggregated “total trips” rows so only valid station pairs with real trip counts appear."
