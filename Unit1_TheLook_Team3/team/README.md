@@ -1,9 +1,9 @@
 Reproducibility instructions: 
 
-Download the Jupyter notebook from the class’s Brightspace page. 
-Insert a mix of text and code cells into the notebook. 
-In the text cells, start by writing the assignment 1 name, project title, dataset name, objective, and deliverable. Go to the class’s Brightspace page for this relevant information. 
-First, connect the Google Colab to BigQuery using the gemini-generated code to authenticate this connection. This will help to load and access the datasets from BigQuery into Google Colab. 
+1. Download the Jupyter notebook from the class’s Brightspace page. 
+2. Insert a mix of text and code cells into the notebook. 
+3. In the text cells, start by writing the assignment 1 name, project title, dataset name, objective, and deliverable. Go to the class’s Brightspace page for this relevant information. 
+4. First, connect the Google Colab to BigQuery using the gemini-generated code to authenticate this connection. This will help to load and access the datasets from BigQuery into Google Colab. 
 Ensure that the datasets have been loaded through print statements and displaying the first 5 rows of each of the tables as pandas dataframes in Colab notebook through Gemini-generated codes. 
 Then, perform the DIVE Analysis. Dedicate each text cell to one part of the DIVE. For example, one text cell contains all instructions for D: discover. These instructions can be copied and pasted into the Colab notebook from the course’s Brightspace page. Then, repeat the same for I: investigate, V: validate, and E: extend (communicate). 
 After each text cell, insert code cells and use Gemini to perform each step of the DIVE Analysis. The sample prompts to enter into Gemini can be found in the prompts_log file. 
